@@ -1007,7 +1007,7 @@ func (r *Reflector) fieldNameTag() string {
 	if r.FieldNameTag != "" {
 		return r.FieldNameTag
 	}
-	return "json"
+	return "yaml"
 }
 
 func (r *Reflector) reflectFieldName(f reflect.StructField) (string, bool, bool, bool) {
